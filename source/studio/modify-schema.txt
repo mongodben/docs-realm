@@ -48,6 +48,8 @@ file with an updated schema, you must :ref:`perform a migration
 Add a Class to the Schema
 -------------------------
 
+.. include:: /includes/add-pause.rst
+
 To add a new class to your schema:
 
 - Press the :guilabel:`+` button next to the :guilabel:`Classes` header

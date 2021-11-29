@@ -66,7 +66,7 @@ Configure Apple ID Authentication
    Apple. What you should put as the Client ID varies by use case: 
 
    - **Developing with the Swift SDK**: Use the **Bundle ID** that you 
-   create in step 1 as your Client ID. 
+     create in step 1 as your Client ID. 
    - **Developing with other SDKs**: Use the **Services ID** that you create in step 2 as your Client ID.
    - **Developing app with Swift SDK and other SDKs**: ``TODO``
 

@@ -59,6 +59,16 @@ following:
 Configure Apple ID Authentication
 ---------------------------------
 
+.. note:: Configuring the Client ID
+
+Every {+app+} that uses Sign in with Apple must have a Client ID configured. 
+The Client ID is a unique identifier for the application for Sign in with 
+Apple. 
+
+If you're developing a {+app+} using the Swift SDK, use the **Bundle ID** that you 
+create in step 1 as your Client ID. If you're developing using any other SDK, 
+use the **Services ID** that you create in step 2 as your Client ID.
+
 .. include:: /includes/steps/apple-auth-configure.rst
 
 .. _apple-authentication-examples:

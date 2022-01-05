@@ -34,6 +34,10 @@ Welcome to the MongoDB Realm Docs
    :alt: Realm landing page hero image
    :class: hero-img
 
+.. raw:: html
+
+   <p style="color:pink">derp derp</p>
+
 Realm includes an embedded, object-oriented database that lets you build
 real-time, offline-first applications. You can also use Realm’s hosted
 application services as a secure backend that can sync data between devices,

@@ -331,7 +331,6 @@ describe("Aggregation Stages", () => {
       },
       { $sort: { _id: 1 } },
     ]);
-    console.log(result);
     // :code-block-end:
     expect(result).toEqual(
       // :code-block-start: group-documents-result
@@ -357,7 +356,6 @@ describe("Aggregation Stages", () => {
         },
       },
     ]);
-    console.log(result);
     // :code-block-end:
     // prettier-ignore
     expect(result).toEqual(
@@ -385,7 +383,6 @@ describe("Aggregation Stages", () => {
         },
       },
     ]);
-    console.log(result);
     // :code-block-end:
     // prettier-ignore
     expect(result).toEqual(
@@ -409,7 +406,6 @@ describe("Aggregation Stages", () => {
       { $unwind: { path: "$colors" } },
       { $sort: { _id: 1, colors: 1 } },
     ]);
-    console.log(result);
     // :code-block-end:
     // prettier-ignore
     expect(result).toEqual(

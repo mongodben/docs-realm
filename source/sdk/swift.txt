@@ -1,4 +1,4 @@
-:template: landing
+:template: product-landing
 :hidefeedback: header
 :noprevnext:
 
@@ -174,45 +174,49 @@ other clients.
    .. tab:: Use Realm with SwiftUI
       :tabid: realm-swiftui
 
-      .. literalinclude:: /examples/generated/swiftui/FilterData.snippet.searchable.swift
-         :language: swift
-         :caption: SwiftUI Property Wrappers Offer Realm/SwiftUI Integration
-         :copyable: false
+      .. div::
 
-      The Realm Swift SDK offers property wrappers and convenience features 
-      designed to make it easier to work with Realm in SwiftUI. Check out the 
-      :ref:`SwiftUI documentation <ios-swiftui-examples>` for example View code 
-      that demonstrates common Realm SwiftUI patterns.
+         .. literalinclude:: /examples/generated/swiftui/FilterData.snippet.searchable.swift
+            :language: swift
+            :caption: SwiftUI Property Wrappers Offer Realm/SwiftUI Integration
+            :copyable: false
+
+         The Realm Swift SDK offers property wrappers and convenience features 
+         designed to make it easier to work with Realm in SwiftUI. Check out the 
+         :ref:`SwiftUI documentation <ios-swiftui-examples>` for example View code 
+         that demonstrates common Realm SwiftUI patterns.
 
    .. tab:: Build with Atlas App Services
       :tabid: app-services
 
-      Call Serverless Functions
-      ~~~~~~~~~~~~~~~~~~~~~~~~~
+      .. div::
 
-      You can :ref:`call serverless Functions <ios-call-a-function>` 
-      from your client application that run in an App Services backend.
+         Call Serverless Functions
+         ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-      .. code-block:: swift
-         :copyable: false
+         You can :ref:`call serverless Functions <ios-call-a-function>` 
+         from your client application that run in an App Services backend.
 
-         let myFunctionResult = try await user.functions.myServerlessFunction(arguments)
+         .. code-block:: swift
+            :copyable: false
 
-      Remotely Access a MongoDB Data Source
-      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            let myFunctionResult = try await user.functions.myServerlessFunction(arguments)
 
-      You can :ref:`query data stored in MongoDB <ios-mongodb-remote-access>`
-      directly from your client application code.
+         Remotely Access a MongoDB Data Source
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-      .. code-block:: swift
-         :copyable: false
+         You can :ref:`query data stored in MongoDB <ios-mongodb-remote-access>`
+         directly from your client application code.
 
-         let client = app.currentUser!.mongoClient("mongodb-atlas")
-         let database = client.database(named: "products")
-         let collection = database.collection(withName: "coffee_drinks")
+         .. code-block:: swift
+            :copyable: false
 
-         let queryFilter: Document = ["name": "Maple Latte"]
-         let queryResult = try await collection.findOneDocument(filter: queryFilter)
+            let client = app.currentUser!.mongoClient("mongodb-atlas")
+            let database = client.database(named: "products")
+            let collection = database.collection(withName: "coffee_drinks")
+
+            let queryFilter: Document = ["name": "Maple Latte"]
+            let queryResult = try await collection.findOneDocument(filter: queryFilter)
 
 .. kicker:: Essential Documentation
 

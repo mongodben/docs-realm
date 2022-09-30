@@ -174,7 +174,7 @@ other clients.
    .. tab:: Use Realm with SwiftUI
       :tabid: realm-swiftui
 
-      .. div::
+      .. container::
 
          .. literalinclude:: /examples/generated/swiftui/FilterData.snippet.searchable.swift
             :language: swift
@@ -189,7 +189,7 @@ other clients.
    .. tab:: Build with Atlas App Services
       :tabid: app-services
 
-      .. div::
+      .. container::
 
          Call Serverless Functions
          ~~~~~~~~~~~~~~~~~~~~~~~~~

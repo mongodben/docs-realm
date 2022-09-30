@@ -1,4 +1,4 @@
-:template: product-landing
+:template: landing
 :hidefeedback: header
 :noprevnext:
 
